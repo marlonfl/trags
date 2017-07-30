@@ -76,7 +76,7 @@ if __name__ == "__main__":
         os.system("mv " + vid_id + ".mp3 ../temp/" + vid_id + ".mp3")
         print(Fore.GREEN + "Playing " + song[1] + Style.RESET_ALL)
         p = vlc.MediaPlayer("/home/marlon/code/trags/trags/temp/" + vid_id + ".mp3")
-        print(p.audio_get_volume())
+
         p.audio_set_volume(95)
         p.play()
 
